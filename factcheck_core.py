@@ -6,12 +6,34 @@ import os
 import re
 import time
 from dataclasses import asdict, dataclass
+from pathlib import Path
 from typing import Iterable
 from urllib.parse import parse_qs, quote_plus, unquote, urlparse
 
 import requests
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
+
+
+def load_local_env() -> None:
+    env_path = Path(__file__).with_name(".env")
+    try:
+        lines = env_path.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        return
+
+    for raw_line in lines:
+        line = raw_line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip("\"'")
+        if key:
+            os.environ.setdefault(key, value)
+
+
+load_local_env()
 
 
 MAX_PAGES = 25

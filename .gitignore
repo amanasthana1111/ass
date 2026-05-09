@@ -1,0 +1,122 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# mypy
+.mypy_cache/
+.dmypy.json
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# PDF and data files
+*.pdf
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# Vercel
+.vercel/
+
+# Python virtual environments
+venv/
+ENV/
+
+# Misc
+*.bak
+*.swp
+*.tmp
+
+# Ignore deployment summary
+DEPLOYMENT_READY.md
+
+# Ignore public build artifacts
+public/
+
+# Ignore API build artifacts
+api/__pycache__/
+
+# Ignore root cache
+__pycache__/
+
+# Ignore test cache
+*.pytest_cache/
+
+# Ignore runtime files
+*.pid
+
+# Ignore render build artifacts
+render.yaml
+
+# Ignore requirements lock files
+poetry.lock
+Pipfile.lock
+requirements.txt.bak
+
+# Ignore runtime.txt backup
+runtime.txt.bak
+
+# Ignore Procfile backup
+Procfile.bak
